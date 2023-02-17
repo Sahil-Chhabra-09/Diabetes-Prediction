@@ -10,7 +10,6 @@ loaded_model = pickle.load(open("Trained_model.sav", 'rb'))
 def diabetes_prediction(input_data):
     input_data = np.asarray(input_data)
     input_data = input_data.reshape(1,-1)
-    input_data
     prediction = loaded_model.predict(input_data)
     if prediction[0]==0:
         return "The person is not diabetic"
