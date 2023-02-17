@@ -1,8 +1,6 @@
 # Diabetes-Prediction
 
-DataSet link : https://www.dropbox.com/s/uh7o7uyeghqkhoy/diabetes.csv?dl=0
-
-DataSet has following attributes:
+[DataSet](https://www.dropbox.com/s/uh7o7uyeghqkhoy/diabetes.csv?dl=0) has following attributes:
   * Pregnancies
   * Glucose
   * BloodPressure
@@ -14,4 +12,4 @@ DataSet has following attributes:
   
 based on which we predict the outcome
 
-Web App : https://sahil-chhabra-09-diabetes-pre-diabetes-prediction-webapp-fkk9fr.streamlit.app/
+Web App : [Click Here](https://sahil-chhabra-09-diabetes-pred.streamlit.app/)
