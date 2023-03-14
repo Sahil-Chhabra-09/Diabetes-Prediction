@@ -1,6 +1,8 @@
 import numpy as np
 import pickle
 import streamlit as st
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 loaded_model = pickle.load(open("Trained_model.sav", 'rb'))
 
