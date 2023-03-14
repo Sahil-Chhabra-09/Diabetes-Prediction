@@ -3,6 +3,7 @@ import pickle
 import streamlit as st
 import seaborn as sns
 import matplotlib.pyplot as plt
+import pandas as pd
 
 loaded_model = pickle.load(open("Trained_model.sav", 'rb'))
 
@@ -51,7 +52,7 @@ def main():
         
     elif page == 'Data Analysis':
         st.title("Exploratory Data Analysis")
-        df = pd.read_csv(r"C:\Users\Sahil Chhabra\Desktop\Streamlit\dataset.csv")
+        df = pd.read_csv(r"./dataset.csv")
         Outcome = df['Outcome']
         df.drop("Outcome", inplace=True, axis = 1)
         columns = st.radio(
