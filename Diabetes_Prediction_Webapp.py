@@ -22,7 +22,7 @@ def diabetes_prediction(input_data):
 def main():
     page = st.selectbox('Select what you see',('Homepage', 'Data Analysis', 'Data Set'))
     
-    if page == 'HomePage':
+    if page == 'Homepage':
     
         #giving a title
         st.title('Diabetes Prediction Web App')
@@ -71,7 +71,7 @@ def main():
         
     elif page=='Data Set':
         st.title("Here's the dataset on which ML model is based")
-        df = pd.read_csv(r"C:\Users\Sahil Chhabra\Desktop\Streamlit\dataset.csv")
+        df = pd.read_csv(r"./dataset.csv")
         # print(df.head())
         st.table(df)
     
