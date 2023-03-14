@@ -63,16 +63,15 @@ def main():
         plt.grid()
         st.line_chart(df[columns])
         st.pyplot(sns.histplot(df[columns]).figure)
-        show = st.checkbox("Show Data Description")
-        if show:
-            st.write("Description of data")
-            st.write(df.describe())
         
         
     elif page=='Data Set':
         st.title("Here's the dataset on which ML model is based")
         df = pd.read_csv(r"./dataset.csv")
-        # print(df.head())
+        show = st.checkbox("Show Data Description")
+        if show:
+            st.write("Description of data")
+            st.write(df.describe())
         st.table(df)
     
     
